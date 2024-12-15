@@ -239,3 +239,289 @@ button {
     font-weight: 600;
     line-height: 1.71;
 }
+
+/* Hero phone */
+.hero__phone {
+    position: relative;
+    width: 49%;
+}
+
+.phone {
+    position: relative;
+    width: 296px;
+    margin: 0 174px 0 auto;
+    border: 12px solid #212832;
+    background: #fff;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.phone::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    display: block;
+    width: 144px;
+    height: 36px;
+    background: #3c2f60;
+    transform: translateX(-50%);
+    border-radius: 0px 0px 18px 18px;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    margin: 42px auto 0 auto;
+    padding: 16px;
+    min-height: 100px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #8679e4, #7264d6);
+}
+
+.card::before {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    content: url(../img/phone-decor-01.svg);
+}
+
+.card::after {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    content: url(../img/phone-decor-02.svg);
+}
+
+.card__inner {
+    position: relative;
+    z-index: 1;
+}
+
+.card__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__heading {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.card__price {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.card__circle {
+    display: flex;
+}
+
+.card__circle::before,
+.card__circle::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #fe6565cc;
+}
+
+.card__circle::after {
+    background: #feef65cc;
+    margin-left: -10px;
+}
+
+.card__info {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px 12px;
+    margin-top: 32px;
+}
+
+.card__title {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card__date,
+.card__username {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.phone__content {
+    padding: 24px 12px 48px 12px;
+}
+
+.phone__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone__heading {
+    color: #31456a;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.transaction__list {
+    margin-top: 28px;
+}
+
+.transaction-item {
+    display: flex;
+    align-items: center;
+}
+
+.transaction-item + .transaction-item {
+    margin-top: 28px;
+}
+
+.transaction-item__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 14px;
+    border-radius: 8px;
+    background: #4ab5e31a;
+}
+
+.transaction-item__title {
+    color: #212832;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.transaction-item__desc {
+    margin-top: 6px;
+    color: #696d76;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.transaction-item__footer {
+    margin-left: auto;
+    text-align: right;
+}
+
+.transaction-item__price {
+    color: #212832;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.transaction-item__date {
+    margin-top: 6px;
+    color: #696d76;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+/* Deposit */
+.deposit {
+    position: absolute;
+    top: 113px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 14px 10px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.deposit__icon {
+    color: #8376e2;
+}
+
+.deposit__title {
+    margin-left: 8px;
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.deposit__price {
+    margin-left: 20px;
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+/* Interest */
+.interest {
+    position: absolute;
+    top: 128px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #da6464;
+}
+
+.interest__percent {
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.interest__title {
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+/* Secured */
+.secured {
+    position: absolute;
+    bottom: 78px;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    padding: 20px 14px;
+    border-radius: 10px;
+    background: #439f90;
+}
+
+.secured__icon {
+    color: #439f90;
+}
+
+.secured__content {
+    margin-left: 10px;
+}
+
+.secured__price {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.secured__title {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1;
+}
