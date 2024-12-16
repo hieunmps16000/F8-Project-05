@@ -537,10 +537,14 @@ button {
     padding-bottom: 160px;
 }
 
-.feature__inner {
+.feature__row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.feature__row + .feature__row {
+    margin-top: 160px;
 }
 
 .feature__media,
@@ -671,4 +675,190 @@ button {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
+}
+
+.feature__list {
+    margin: 28px 0;
+}
+
+.feature__item {
+    display: flex;
+    align-items: center;
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.feature__item::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin-right: 12px;
+    border-radius: 50%;
+    background: #7264d6;
+}
+
+.feature__item + .feature__item {
+    margin-top: 18px;
+}
+
+.feature__card {
+    position: relative;
+}
+
+.feature .card {
+    display: flex;
+    flex-direction: column;
+    width: 482px;
+    height: 322px;
+    margin: 0 88px 0 0;
+    padding: 38px;
+}
+
+.feature .card__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.feature .card__heading {
+    font-size: 2.4rem;
+}
+
+.feature .card__price {
+    margin-top: 10px;
+    font-size: 3.2rem;
+}
+
+.feature .card__info {
+    margin-top: auto;
+}
+
+.feature .card__title {
+    font-size: 2rem;
+}
+
+.feature .card__title + .card__title,
+.feature .card__date {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.feature .card__username {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.feature .card__circle::before,
+.feature .card__circle::after {
+    width: 48px;
+    height: 48px;
+}
+
+.feature .card__circle::after {
+    margin-left: -18px;
+}
+
+.feature .card::before {
+    content: url(../img/feature-decor-02.svg);
+}
+
+.feature .card::after {
+    content: url(../img/feature-decor-03.svg);
+}
+
+.feature__send {
+    position: absolute;
+    top: -48px;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 22px 12px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+}
+
+.feature__send-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    color: #da6464;
+    background: #da64641a;
+}
+
+.feature__send-info {
+    margin-left: 14px;
+}
+
+.feature__send-title {
+    color: #212832;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.feature__send-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 70px;
+}
+
+.feature__send-row + .feature__send-row {
+    margin-top: 6px;
+}
+
+.feature__send-price {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.feature__send-desc {
+    color: #696d76;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Feature income */
+.feature__income {
+    position: absolute;
+    bottom: -55px;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    padding: 16px;
+    border-radius: 16px;
+    background: #439f90;
+}
+
+.feature__income-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: #fff;
+    color: #439f90;
+}
+
+.feature__income-title {
+    margin-top: 14px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.feature__income-price {
+    margin-top: 6px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
