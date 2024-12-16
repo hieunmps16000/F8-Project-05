@@ -58,7 +58,6 @@ button {
     margin-bottom: 12px;
     color: #696d77;
     font-size: 1.6rem;
-    font-style: normal;
     font-weight: 400;
     line-height: 1.75;
 }
@@ -69,6 +68,13 @@ button {
     width: 18px;
     height: 2px;
     background: #696d77;
+}
+
+.section-heading {
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
 }
 
 .section-desc {
@@ -524,4 +530,145 @@ button {
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 1;
+}
+
+/* Feature */
+.feature {
+    padding-bottom: 160px;
+}
+
+.feature__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature__media,
+.feature__content {
+    width: 40%;
+}
+
+.feature__img-wrap {
+    position: relative;
+    width: 470px;
+    height: 619px;
+}
+
+.feature__img-wrap::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 88.8%;
+    background: url(../img/feature-decor-01.svg) bottom center / contain no-repeat;
+}
+
+.feature__img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 456px;
+    height: 619px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.feature__media-decor {
+    position: absolute;
+    top: 76px;
+    right: 62px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    background: #7264d6;
+}
+
+.feature__media-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background: #fff;
+    color: #7264d6;
+}
+
+.congratulation {
+    position: absolute;
+    bottom: 96px;
+    right: -100px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+}
+
+.congratulation__icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #4ab5e3;
+    border-radius: 6px;
+}
+
+.congratulation__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    color: #4ab5e3;
+}
+
+.congratulation__info {
+    margin-left: 10px;
+}
+
+.congratulation__title {
+    color: #212832;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.congratulation__desc {
+    margin-top: 5px;
+    color: #696d76;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.process__list {
+    margin-top: 70px;
+}
+
+.process-item + .process-item {
+    margin-top: 30px;
+}
+
+.process-item__heading {
+    color: #212832;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.process-item__desc {
+    margin-top: 16px;
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
 }
