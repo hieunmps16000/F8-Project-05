@@ -950,3 +950,128 @@ button {
     background: #7264d6;
     box-shadow: 0px 15px 40px 0px #0000001a;
 }
+
+.client {
+    margin-bottom: 160px;
+}
+
+.client-top {
+    text-align: center;
+}
+
+.client__desc {
+    width: 435px;
+    margin: 18px auto 0 auto;
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.client__feedback {
+    margin-top: 70px;
+}
+
+.client__feedback-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+}
+
+.client__feedback-item__content {
+    position: relative;
+    margin-bottom: 96px;
+    padding: 42px 28px;
+    background: #fff;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 1px #d0d3da);
+    transition: filter 0.25s;
+}
+
+.client__feedback-item:hover .client__feedback-item__content {
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+}
+
+.client__feedback-item__content::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 60px 50px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+.client__feedback-item__desc {
+    color: #696d76;
+    text-align: center;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.54;
+}
+
+.client__feedback-item__avatar {
+    margin-top: 36px;
+    text-align: center;
+}
+
+.client__feedback-item__img-wrap {
+    width: 104px;
+    height: 104px;
+    margin: 0 auto;
+    padding-top: 6px;
+    border-radius: 50%;
+    background: #4ab5e3;
+}
+
+.client__feedback-item:last-child .client__feedback-item__img-wrap {
+    background: #439f90;
+}
+
+.client__feedback-item__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.client__feedback-item__name {
+    margin-top: 20px;
+    color: #070052;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+}
+
+.client__feedback-item__title {
+    margin-top: 2px;
+    color: #696d76;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66;
+}
+
+.client__feedback-control {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+}
+
+.client__feedback-btn {
+    width: 22px;
+    height: 6px;
+    background: #fff;
+    border-radius: 1px;
+    border: 1px solid #9b9fab;
+    outline: none;
+    cursor: pointer;
+}
+
+.client__feedback-btn--active,
+.client__feedback-btn:hover {
+    background: #7264d6;
+}
