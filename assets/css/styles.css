@@ -552,6 +552,10 @@ button {
     width: 40%;
 }
 
+.feature__media {
+    position: relative;
+}
+
 .feature__img-wrap {
     position: relative;
     width: 470px;
@@ -861,4 +865,88 @@ button {
     color: #fff;
     font-size: 1.8rem;
     font-weight: 600;
+}
+
+.feature__img-wrap-last {
+    position: relative;
+    width: 470px;
+    height: 600px;
+    padding: 0 28px;
+}
+
+.feature__img-wrap-last::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 72%;
+    background: url(../img/feature-decor-04.svg) top center / cover no-repeat;
+}
+
+.feature__img-wrap-last img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.payment {
+    position: absolute;
+    right: -74px;
+    bottom: 57px;
+    z-index: 1;
+    padding: 28px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 44px 48px 0px #0000001a;
+}
+
+.payment__title {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.payment__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.payment__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 48px;
+    border-radius: 4px;
+    background: #f2f2fa;
+}
+
+.payment__item:last-child {
+    color: #212832;
+    background: #f9ea63;
+}
+
+.payment__item img {
+    width: 40px;
+    height: 24px;
+}
+
+.decor-money {
+    position: absolute;
+    bottom: 222px;
+    right: -110px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    color: #fff;
+    background: #7264d6;
+    box-shadow: 0px 15px 40px 0px #0000001a;
 }
