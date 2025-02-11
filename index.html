@@ -58,7 +58,7 @@
 
                     <!-- Navbar -->
                     <nav class="navbar">
-                        <ul class="navbar__list">
+                        <ul id="menu-pc" class="navbar__list">
                             <li class="navbar__item">
                                 <a href="#!" class="navbar__link navbar__link--active">Home</a>
                             </li>
@@ -87,7 +87,14 @@
         <header class="header-mobile">
             <!-- header-mobile--active -->
             <div class="menu__overlay"></div>
-            <div class="menu__drawer"></div>
+            <div class="menu__drawer">
+                <!-- Logo -->
+                <a href="#!" class="logo">
+                    <img src="./assets/img/logo.svg" alt="" />
+                </a>
+
+                <ul id="menu-mobile"></ul>
+            </div>
         </header>
 
         <main>
