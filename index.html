@@ -93,6 +93,8 @@
                                         type="email"
                                         class="subscribe-form__input"
                                         placeholder="Your email address"
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                        required
                                     />
                                     <button class="subscribe-form__submit">Get Started</button>
                                 </div>
@@ -793,14 +795,20 @@
                             </p>
                             <h3 class="footer__heading">News letter</h3>
                             <form action="" class="footer__form">
-                                <input type="email" class="footer__form-input" placeholder="Email address..." />
+                                <input
+                                    type="email"
+                                    class="footer__form-input"
+                                    placeholder="Email address..."
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                    required
+                                />
                                 <button type="submit" class="footer__form-submit">Subscribe</button>
                             </form>
                         </div>
                     </div>
                     <div class="footer__contact">
-                        <a href="#!" class="footer__contact-link">email@gmail.com</a>
-                        <a href="" class="footer__contact-link">(123) 456-7890</a>
+                        <a href="mailto:email@gmail.com" class="footer__contact-link">email@gmail.com</a>
+                        <a href="tel:(123) 456-7890" class="footer__contact-link">(123) 456-7890</a>
                     </div>
                 </div>
             </div>
