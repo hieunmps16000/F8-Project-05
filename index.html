@@ -34,12 +34,23 @@
         <!-- Embed reset css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
-        <!-- Header -->
+        <!-- Header PC-->
         <header class="header">
             <div class="container">
                 <div class="header__inner">
+                    <!-- Menu toggle -->
+                    <button class="menu-toggle" aria-label="Menu button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </button>
+
                     <!-- Logo -->
                     <a href="#!" class="logo">
                         <img src="./assets/img/logo.svg" alt="" />
@@ -70,6 +81,13 @@
                     </div>
                 </div>
             </div>
+        </header>
+
+        <!-- Header Tablet/ mobile -->
+        <header class="header-mobile">
+            <!-- header-mobile--active -->
+            <div class="menu__overlay"></div>
+            <div class="menu__drawer"></div>
         </header>
 
         <main>
