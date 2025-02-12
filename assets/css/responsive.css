@@ -63,6 +63,22 @@
         transform: translateX(0);
     }
 
+    .menu__drawer-close-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        padding: 20px;
+        color: #666;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+
+    .menu__drawer-close-btn svg {
+        width: 16px;
+    }
+
     .menu-mobile {
         margin-top: 48px;
     }

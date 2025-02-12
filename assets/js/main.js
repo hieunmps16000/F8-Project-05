@@ -7,6 +7,7 @@ const menuOverlay = $('.menu__overlay');
 const menuPc = $('#menu-pc');
 const menuMobile = $('#menu-mobile');
 const header = $('.header');
+const menuMobileClose = $('.menu__drawer-close-btn');
 let ticking = false;
 
 function handleScroll() {
@@ -31,6 +32,10 @@ menuToggle.onclick = () => {
 }
 
 menuOverlay.onclick = () => {
+    headerMobile.classList.remove('header-mobile--active');
+}
+
+menuMobileClose.onclick = () => {
     headerMobile.classList.remove('header-mobile--active');
 }
 
