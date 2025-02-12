@@ -130,6 +130,10 @@ button {
     background: #fff;
 }
 
+.header.fixed {
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.05);
+}
+
 .header__inner {
     display: flex;
     align-items: center;
@@ -1094,7 +1098,7 @@ button {
     line-height: 1.66;
 }
 
-.client__feedback-control {
+.dots {
     margin-top: 38px;
     display: flex;
     align-items: center;
@@ -1102,7 +1106,7 @@ button {
     column-gap: 12px;
 }
 
-.client__feedback-btn {
+.dot {
     width: 22px;
     height: 6px;
     background: #fff;
@@ -1112,8 +1116,8 @@ button {
     cursor: pointer;
 }
 
-.client__feedback-btn--active,
-.client__feedback-btn:hover {
+.dot--active,
+.dot:hover {
     background: #7264d6;
 }
 

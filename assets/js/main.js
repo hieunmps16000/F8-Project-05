@@ -6,6 +6,25 @@ const headerMobile = $('.header-mobile');
 const menuOverlay = $('.menu__overlay');
 const menuPc = $('#menu-pc');
 const menuMobile = $('#menu-mobile');
+const header = $('.header');
+let ticking = false;
+
+function handleScroll() {
+    if (window.scrollY > 50) {
+        header.classList.add('fixed');
+    } else {
+        header.classList.remove('fixed');
+    }
+
+    ticking = false;
+}
+
+window.addEventListener('scroll', () => {
+    if (!ticking) {
+        requestAnimationFrame(handleScroll);
+        ticking = true;
+    }
+});
 
 menuToggle.onclick = () => {
     headerMobile.classList.add('header-mobile--active');
