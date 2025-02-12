@@ -90,6 +90,37 @@ button {
     line-height: 1.66;
 }
 
+/* Animation */
+@keyframes jumpping {
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+    40% {
+        transform: translate3d(var(--jump-x), var(--jump-y), 0);
+    }
+}
+
+.jumpping-x {
+    --jump-x: 20px;
+    --jump-y: 0;
+    animation: jumpping 6s infinite linear;
+}
+
+.jumpping-y {
+    --jump-x: 0;
+    --jump-y: 20px;
+    animation: jumpping 6s infinite linear;
+}
+
+.jumpping-x-revert {
+    --jump-x: -20px;
+}
+
+.jumpping-y-revert {
+    --jump-y: -20px;
+}
+
 /* Header */
 .header {
     position: sticky;
