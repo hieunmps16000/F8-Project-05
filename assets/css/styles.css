@@ -91,13 +91,6 @@ button {
     line-height: 1.66;
 }
 
-.cliptext {
-    display: -webkit-box !important;
-    -webkit-line-clamp: var(--line-clamp, 1);
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
 .line-clamp-2 {
     --line-clamp: 2;
 }
