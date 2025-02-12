@@ -49,10 +49,11 @@ button {
     user-select: none;
     border: none;
     outline: none;
+    transition: 0.25s;
 }
 
 .btn:hover {
-    opacity: 0.9;
+    background: #7264d6;
 }
 
 .section-label {
@@ -88,6 +89,17 @@ button {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.66;
+}
+
+.cliptext {
+    display: -webkit-box !important;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-2 {
+    --line-clamp: 2;
 }
 
 /* Animation */
